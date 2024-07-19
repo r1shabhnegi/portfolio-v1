@@ -2,6 +2,7 @@
 import { PROJECTS } from "@/constants";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 const Projects = () => {
   return (
     <div className='border-b border-neutral-800 pb-4'>
@@ -22,20 +23,24 @@ const Projects = () => {
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1 }}
               className='w-full lg:w-1/4'>
-              <Image
-                src={project.image}
-                width={150}
-                height={150}
-                alt={project.title}
-                className='mb-6 rounded'
-              />
+              <Link href={project.link}>
+                <Image
+                  src={project.image}
+                  width={150}
+                  height={150}
+                  alt={project.title}
+                  className='mb-6 rounded'
+                />
+              </Link>
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 1 }}
               className='w-full max-w-xl lg:w-3/4'>
-              <h6 className='mb-2 font-semibold'>{project.title}</h6>
+              <Link href={project.link}>
+                <h6 className='mb-2 font-semibold'>{project.title}</h6>
+              </Link>
               <p className='mb-4 text-neutral-400'>{project.description}</p>
               {project.technologies.map((tech, index) => (
                 <span
