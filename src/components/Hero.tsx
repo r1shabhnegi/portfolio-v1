@@ -4,7 +4,7 @@ import profilePic from "../assets/rishabh.jpeg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const container = (delay) => ({
+const container = (delay: number) => ({
   hidden: { x: -100, opacity: 0 },
   visible: {
     x: 0,
