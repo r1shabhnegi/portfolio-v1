@@ -67,7 +67,7 @@ export const PROJECTS = [
     description:
       "An app featuring an intuitive hotel registration form, allowing users to easily register their hotels and make bookings seamlessly.",
     technologies: ["React", "Node.js", "Express", "MongoDb"],
-    link: "https://hotel-stay.onrender.com",
+    link: "https://hotel-stay.circlesssbackend.xyz",
   },
 ];
 
