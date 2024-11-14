@@ -1,6 +1,7 @@
 import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
+import project4 from "../assets/projects/project-4.png";
 
 export const HERO_CONTENT = `I am a self taught Full Stack Developer, An experienced software developer who builds web applications. I love turning ideas into reliable and easy-to-use digital solutions. I focus on details and use the latest technologies to create applications that go beyond what clients expect. I combine creativity and technical skills to ensure everything works smoothly and provides a great user experience. My goal is to deliver outstanding web applications that shine in a competitive market.`;
 
@@ -67,7 +68,15 @@ export const PROJECTS = [
     description:
       "An app featuring an intuitive hotel registration form, allowing users to easily register their hotels and make bookings seamlessly.",
     technologies: ["React", "Node.js", "Express", "MongoDb"],
-    link: "https://hotel-stay.circlesssbackend.xyz",
+    link: "https://hotelapp-five.vercel.app",
+  },
+  {
+    title: "Course selling website",
+    image: project4,
+    description:
+      "A website where you can sell courses, complete with an admin dashboard. Control everything from adding, editing, or removing courses, to checking how users and courses are doing. You can tweak the site's look with new banners and headlines, and your students will have a great experience watching video tutorials.",
+    technologies: ["React", "Node.js", "Express", "MongoDb", "Redis"],
+    link: "https://youtu.be/gnTNOeukXSc?si=M1jbTDmUyxudiPCl",
   },
 ];
 

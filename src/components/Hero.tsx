@@ -26,14 +26,14 @@ const Hero = () => {
               Rishabh Negi
             </motion.h1>
             <motion.span
-              variants={container(0.5)}
+              variants={container(0.2)}
               initial='hidden'
               animate='visible'
               className='bg-gradient-to-r from-pink-300 via-slate-500 to bg-purple-500 bg-clip-text text-3xl lg:text-4xl ml-2 tracking-tight text-transparent'>
               Full Stack Developer
             </motion.span>
             <motion.p
-              variants={container(1)}
+              variants={container(0.4)}
               initial='hidden'
               animate='visible'
               className='my-2 ml-2 max-w-xl py-6 tracking-tighter'>
@@ -45,7 +45,7 @@ const Hero = () => {
           <motion.div
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 1.2 }}
+            transition={{ duration: 1, delay: 0.4 }}
             className='flex justify-center'>
             <Image
               src={profilePic}
